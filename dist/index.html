@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon-BSWH4giL.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling mouse</title>
+    <script type="module" crossorigin src="./assets/index-CtGHLuiP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-aYyBoOte.css">
+  </head>
+  <body>
+    <canvas id="three-canvas"></canvas>
+    <div id="app">
+      <div class="content-panel">
+        <h2>More Dramatic Vertex Displacement:</h2>
+        <p>Increased the amplitude of the ripple waves by 3x</p>
+        <p>Made the ripples more frequent (higher frequency) by adjusting the sin function</p>
+        <p>Reduced the decay rate so ripples last longer</p>
+        <p>Added stronger displacement along the Z-axis</p>
+      </div>
+
+      <div class="content-panel">
+        <h2>UV Distortion:</h2>
+        <p>Added UV coordinate distortion that follows the ripple waves</p>
+        <p>This makes the texture itself appear to stretch and compress with the ripples</p>
+        <p>Added a direction vector so the texture distorts radially from ripple centers</p>
+      </div>
+
+      <div class="content-panel">
+        <h2>Enhanced Fragment Shader Effects:</h2>
+        <p>Improved the fragment shader to create a more realistic water effect</p>
+        <p>Added additional time-based swirling distortion to the texture</p>
+        <p>Increased color intensity and contrast for more dramatic visual effect</p>
+        <p>Added highlighting on ripple peaks for a wet/glossy appearance</p>
+      </div>
+
+      <div class="content-panel">
+        <h2>Controls:</h2>
+        <p>Added an intensity slider to control how strong the ripple effect is</p>
+        <p>Values range from subtle (1) to extremely dramatic (10)</p>
+        <p>The slider works in real-time, affecting new ripples as you create them</p>
+      </div>
+
+    </div>
+  </body>
+</html>
