@@ -47,7 +47,7 @@ function init(): void {
     const loader = new GLTFLoader();
 
     // Optimize model loading
-    loader.load('./model/smallBoat.glb', (gltf) => {
+    loader.load('model/smallBoat.glb', (gltf) => {
         smallBoat = gltf.scene;
         smallBoat.scale.set(.1,.1,.1);
         smallBoat.position.set(-3, 0, .5);
@@ -199,7 +199,7 @@ function init(): void {
     bgmNN = new THREE.Audio(listener);
     const audioLoader = new THREE.AudioLoader();
 
-    audioLoader.load('./sound/BGM_Algea.mp3', (buffer) => {
+    audioLoader.load('sound/BGM_Algea.mp3', (buffer) => {
     bgmNN.setBuffer(buffer);
     bgmNN.setLoop(true);
     bgmNN.setVolume(0.1);
